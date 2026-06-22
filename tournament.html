@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tournaments - PulsePay</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Navigation Bar -->
@@ -33,6 +34,7 @@
     <h1>All Tournaments</h1>
     <p>Browse ongoing, upcoming, and completed tournaments across the PulsePay community.</p>
 
+
     <!-- Filter Bar -->
     <div class="filter-bar">
       <button class="filter-btn active">All</button>
@@ -43,9 +45,28 @@
 
     <!-- Tournament Grid -->
     <div class="tournament-list">
+
+      <!-- ⚽ Football Cup – with Bracket -->
+      <div class="tournament-card" style="border: 1px solid rgba(157,78,221,0.35);">
+        <div style="background: linear-gradient(135deg, #1a0b2e 0%, #0d0621 100%); height: 200px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px;">
+          <span style="font-size:3.5rem;">⚽</span>
+          <span style="font-size:0.75rem; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#9d4edd;">Copa-style Bracket</span>
+        </div>
+        <div class="tournament-info">
+          <h3 style="color:#9d4edd;">PulsePay Football Cup 2025</h3>
+          <p><strong>Date:</strong> Oct 28 – Dec 14, 2025</p>
+          <p><strong>Prize Pool:</strong> ₦500,000</p>
+          <p><strong>Format:</strong> 16 Teams · Group Stage + Knockout</p>
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:14px;">
+            <a href="bracket.html" class="join-btn" style="text-decoration:none; display:inline-block;">🏆 View Bracket</a>
+            <button class="join-btn" style="background:transparent; border:1px solid #00BFFF; color:#00BFFF;">Join Tournament</button>
+          </div>
+        </div>
+      </div>
+
       <!-- Tournament Card 1 -->
       <div class="tournament-card">
-        <img src="assets/images/placeholder1.jpg" alt="FIFA 24 Tournament">
+        <div style="background:linear-gradient(135deg,#0d1117,#111); height:200px; display:flex; align-items:center; justify-content:center; font-size:3rem;">🎮</div>
         <div class="tournament-info">
           <h3>FIFA 24 Championship</h3>
           <p><strong>Date:</strong> October 28, 2025</p>
@@ -56,7 +77,7 @@
 
       <!-- Tournament Card 2 -->
       <div class="tournament-card">
-        <img src="assets/images/placeholder2.jpg" alt="Mortal Kombat Tournament">
+        <div style="background:linear-gradient(135deg,#0d1117,#111); height:200px; display:flex; align-items:center; justify-content:center; font-size:3rem;">⚔️</div>
         <div class="tournament-info">
           <h3>Mortal Kombat Legends</h3>
           <p><strong>Date:</strong> November 5, 2025</p>
@@ -67,7 +88,7 @@
 
       <!-- Tournament Card 3 -->
       <div class="tournament-card">
-        <img src="assets/images/placeholder3.jpg" alt="Fortnite Tournament">
+        <div style="background:linear-gradient(135deg,#0d1117,#111); height:200px; display:flex; align-items:center; justify-content:center; font-size:3rem;">🎯</div>
         <div class="tournament-info">
           <h3>Fortnite Arena</h3>
           <p><strong>Date:</strong> December 2, 2025</p>
@@ -75,6 +96,7 @@
           <button class="join-btn">Join Tournament</button>
         </div>
       </div>
+
     </div>
   </section>
 

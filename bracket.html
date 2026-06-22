@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Football Bracket – PulsePay Cup</title>
+  <meta name="description" content="Follow the PulsePay Football Cup bracket — Copa-style knockout tournament featuring 16 African nations." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/bracket.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="assets/images/Pulsupay Background Removed.png" alt="PulsePay Logo" class="logo-img" onerror="this.style.display='none'">
+      <div class="logo">PulsePay</div>
+    </div>
+
+    <nav aria-label="Main Navigation">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="tournament.html" class="active">Tournaments</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <button class="signin-btn" onclick="window.location.href='signin.html'">Sign In</button>
+    </nav>
+
+    <div class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" role="button" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="bracket-page">
+
+    <!-- Page Header -->
+    <div class="bracket-header">
+      <div class="tournament-badge">eFootball · PulsePay Cup 2025</div>
+      <h1>Football Cup Bracket</h1>
+      <p>Copa-style knockout tournament — 16 African nations battling for the trophy. Pick your winners and track every result.</p>
+      <div class="bracket-meta">
+        <span>📅 <strong>Oct 28 – Dec 14, 2025</strong></span>
+        <span>🏟️ <strong>16 Teams</strong></span>
+        <span>💰 Prize Pool: <strong>₦500,000</strong></span>
+      </div>
+    </div>
+
+    <!-- Stage Tabs -->
+    <div class="stage-tabs" role="tablist" aria-label="Tournament stages">
+      <button class="stage-tab active" data-stage="stage-groups" role="tab" aria-selected="true">Group Stage</button>
+      <button class="stage-tab" data-stage="stage-knockout" role="tab" aria-selected="false">Knockout Bracket</button>
+    </div>
+
+    <!-- ========== GROUP STAGE ========== -->
+    <div class="bracket-stage active" id="stage-groups" role="tabpanel">
+      <div class="groups-grid" id="groups-container">
+        <!-- Rendered by bracket.js -->
+      </div>
+    </div>
+
+    <!-- ========== KNOCKOUT BRACKET ========== -->
+    <div class="bracket-stage" id="stage-knockout" role="tabpanel">
+
+      <p class="bracket-instruction">
+        <span>🖱️ Click a team name in any unplayed match to advance them to the next round</span>
+      </p>
+
+      <p class="bracket-scroll-hint">← Scroll horizontally to view full bracket →</p>
+
+      <div class="bracket-container">
+        <div class="bracket-tree" id="bracket-tree">
+          <!-- Rendered by bracket.js -->
+        </div>
+      </div>
+
+      <!-- 3rd Place -->
+      <div class="third-place-section">
+        <div class="third-place-label">3rd Place Play-off</div>
+        <div id="third-place-section">
+          <!-- Rendered by bracket.js -->
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <div class="bracket-controls">
+        <button class="btn-reset" id="btn-reset">↺ Reset Bracket</button>
+        <button class="btn-share" id="btn-share">Share Bracket</button>
+      </div>
+
+    </div><!-- /knockout -->
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2025 PulsePay. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+        <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://discord.com" target="_blank" rel="noopener">Discord</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/bracket.js"></script>
+</body>
+</html>
